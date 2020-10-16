@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9da9cb6-8a7b-492d-9cc1-5bab7958c716" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="d9da9cb6-8a7b-492d-9cc1-5bab7958c716" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,8 +29,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/Program Files/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="localRepository" value="E:\Java\Maven\m2\repository" />
+        <option name="mavenHome" value="F:/Maven/maven" />
+        <option name="userSettingsFile" value="E:\Java\Maven\maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -46,6 +44,11 @@
   </component>
   <component name="ProjectId" id="1itXX6pD0858shXPipwLN3DKlXv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="LombokPluginEnabledInProject" value="true" />
     <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="false" />
@@ -63,14 +66,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springsecurity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yeb-server/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -142,15 +145,15 @@
       <workItem from="1602727899502" duration="2320000" />
       <workItem from="1602730933800" duration="4419000" />
       <workItem from="1602743566539" duration="12883000" />
-      <workItem from="1602770803265" duration="1479000" />
-      <workItem from="1602772329760" duration="306000" />
+      <workItem from="1602770803265" duration="1074000" />
+      <workItem from="1602818124122" duration="397000" />
     </task>
-    <task id="LOCAL-00001" summary="第一次提交">
-      <created>1602772027179</created>
+    <task id="LOCAL-00001" summary="修改部门管理">
+      <created>1602828791243</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1602772027179</updated>
+      <updated>1602828791243</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -173,18 +176,49 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
-    <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="修改部门管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改部门管理" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/yeb-server/src/main/java/com/xxxx/server/config/security/MySecurityMetadataSource.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602818270599">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602818270599" />
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1602818590199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602818590199" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1602818590199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602818590199" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1602818590199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602818590199" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1602818590199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602818590199" />
+    <state width="1877" height="435" key="GridCell.Tab.1.bottom" timestamp="1602818571670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602818571670" />
+    <state width="1877" height="435" key="GridCell.Tab.1.center" timestamp="1602818571670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602818571670" />
+    <state width="1877" height="435" key="GridCell.Tab.1.left" timestamp="1602818571670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602818571670" />
+    <state width="1877" height="435" key="GridCell.Tab.1.right" timestamp="1602818571670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602818571670" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1602818271858">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602818271858" />
   </component>
 </project>
