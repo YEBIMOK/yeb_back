@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
 
 /**
@@ -30,8 +31,8 @@ public class LoginController {
 
 	@ApiOperation("登录")
 	@PostMapping("/login")
-	public RespBean login(@RequestBody AdminLoginParam adminLoginParam) {
-		return adminService.login(adminLoginParam.getUsername(), adminLoginParam.getPassword());
+	public RespBean login(@RequestBody AdminLoginParam adminLoginParam, HttpServletRequest request) {
+		return adminService.login(adminLoginParam.getUsername(), adminLoginParam.getPassword(),adminLoginParam.getCode(),request);
 	}
 
 

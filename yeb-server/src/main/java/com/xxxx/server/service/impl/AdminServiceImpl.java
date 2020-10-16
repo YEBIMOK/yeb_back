@@ -1,6 +1,7 @@
 package com.xxxx.server.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xxxx.server.mapper.AdminMapper;
 import com.xxxx.server.pojo.Admin;
@@ -17,6 +18,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -79,5 +81,31 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
 	@Override
 	public Admin getUserByUsername(String username) {
 		return adminMapper.selectOne(new QueryWrapper<Admin>().eq("username",username));
+	}
+
+	//登录返回token
+	@Override
+	public RespBean login(String username, String password, String code, HttpServletRequest request) {
+		String captcha = (String) request.getSession().getAttribute("captcha");
+		if (StringUtils.isBlank(code) || !captcha.equals(code)) {
+			return RespBean.error("验证码填写错误！");
+		}
+		UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+		if (null == userDetails || !passwordEncoder.matches(password,
+				userDetails.getPassword())) {
+			return RespBean.error("用户名或密码不正确!");
+		}
+		if (!userDetails.isEnabled()){
+			return RespBean.error("账号被禁用，请联系管理员!");
+		}
+		UsernamePasswordAuthenticationToken authentication =
+				new UsernamePasswordAuthenticationToken(userDetails, null,
+						userDetails.getAuthorities());
+		SecurityContextHolder.getContext().setAuthentication(authentication);
+		String token = jwtUtils.generatorToken(userDetails);
+		Map<String, String> tokenMap = new HashMap<>();
+		tokenMap.put("token", token);
+		tokenMap.put("tokenHead", tokenHead);
+		return RespBean.success("登录成功", tokenMap);
 	}
 }

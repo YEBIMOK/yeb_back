@@ -44,12 +44,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(WebSecurity web) throws Exception {
 		web.ignoring().antMatchers(
 				"/login",
-				"/logout",
+				"/css/**",
 				"/js/**",
+				"/index.html",
+				"/img/**",
+				"/fonts/**",
+				"/favicon.ico",
+				"/doc.html",
 				"/webjars/**",
 				"/swagger-resources/**",
 				"/v2/api-docs/**",
-				"/doc.html"
+				"/captcha"
 		);
 	}
 

@@ -5,20 +5,17 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+//登录接收对象
 
-/**
- * 登录接受对象
- *
- * @author zhoubin
- * @since 1.0.0
- */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="登录接受对象", description="")
+@ApiModel(value = "AdminLogin对象", description = "")
 public class AdminLoginParam {
-	@ApiModelProperty(value = "用户名",required = true)
+	@ApiModelProperty(value = "用户名", required = true)
 	private String username;
-	@ApiModelProperty(value = "密码",required = true)
+	@ApiModelProperty(value = "密码", required = true)
 	private String password;
+	@ApiModelProperty(value = "验证码", required = true)
+	private String Code;
 }
