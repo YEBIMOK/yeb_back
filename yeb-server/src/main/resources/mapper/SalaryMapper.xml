@@ -24,5 +24,11 @@
     <sql id="Base_Column_List">
         id, basicSalary, bonus, lunchSalary, trafficSalary, allSalary, pensionBase, pensionPer, createDate, medicalBase, medicalPer, accumulationFundBase, accumulationFundPer, name
     </sql>
+    <select id="querySalary" resultType="com.xxxx.server.pojo.Salary">
+        SELECT
+            name,basicSalary,trafficSalary,lunchSalary,bonus,createDate,pensionPer,pensionBase,medicalPer,medicalBase,accumulationFundPer,accumulationFundBase
+        FROM
+            t_salary
+    </select>
 
 </mapper>
